@@ -22,13 +22,13 @@ var path = require("path");
 //   GET  /api/workouts
 app.get("/api/workouts", (req, res) => {
     db.Workout.find({})
-      .then(result => {
-        res.send(result);
-      })
-      .catch(err => {
+    .then(result => {
+        res.json(result);
+    })
+    .catch(err => {
         res.json(err);
-      });
-  });
+    });
+});
 //   POST /api/workouts
 app.post("/api/workouts", ({body}, res) => {
         const workout = new Workout(body);
@@ -64,6 +64,15 @@ app.put("/api/workouts/:id", (req, res) => {
     );
   });
 //   GET  /api/workouts/range
+app.get("/api/workouts/range", (req, res) => {
+    db.Workout.find({})
+    .then(result => {
+        res.json(result);
+    })
+    .catch(err => {
+        res.json(err);
+    });
+});
 //   GET  /exercise
 app.get("/exercise", (req,res) => {
     res.sendFile(path.join(__dirname, "/public/exercise.html"));
