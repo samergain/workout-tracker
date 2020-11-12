@@ -18,15 +18,27 @@ const WorkoutSchema = new Schema({
                 trim: true,
                 required: "Name is Required"
             },
-            duration: {type: Number},
+            duration: {
+                    type: Number,
+                    required: "Duration is required, enter amount of minutes."
+            },
             weight: {type: Number},
             reps: {type: Number},
             sets: {type: Number},
             distance: {type: Number}
         }
     ]
-});
-
+},{
+    toJSON:{
+        virtuals:true
+    }
+}
+);
+WorkoutSchema.virtual("totalDuration").get(function(){
+    return this.exercises.reduce((total,exercise)=>{
+        return total + exercise.duration
+    },0)
+})
 const Workout = mongoose.model("Workout", WorkoutSchema);
 module.exports = Workout;
 
