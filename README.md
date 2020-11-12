@@ -23,9 +23,9 @@
   Click on Dashboard to go to the statistics.
   
   ## Screenshots
-  ![screenshot](screenshots/santa1.png)
-  ![screenshot](screenshots/santa2.png)
-  ![screenshot](screenshots/santa3.png)
+  ![screenshot](workout1.png)
+  ![screenshot](workout2.png)
+
   
   ## License
   None
