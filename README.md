@@ -17,6 +17,7 @@
   To run the app on your local computer you'll need to have MongoDB, Node.js installed. Download the project -> run npm i -> make sure mongodb is running -> in terminal run: npm start. 
   
   ## Usage
+  [Deployed app on Heroku](https://workout-trackerss.herokuapp.com/)  
   First, start by adding your workout data.  
   You can continue adding exercises to the same workout or create a new workout.  
   Fill in the data required for each exercise.  
