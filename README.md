@@ -32,8 +32,8 @@
   
   ## Contributions
   The following resources helped with building this app:  
-  https://mongoosejs.com/docs/tutorials/virtuals.html
-  https://kb.objectrocket.com/mongo-db/how-to-use-the-mongoose-limit-function-927
+  https://mongoosejs.com/docs/tutorials/virtuals.html  
+  https://kb.objectrocket.com/mongo-db/how-to-use-the-mongoose-limit-function-927  
   https://mongoosejs.com/docs/queries.html
   
   
